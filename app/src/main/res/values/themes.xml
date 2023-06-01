@@ -1,0 +1,18 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.InOpenApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.InOpenApp" parent="Base.Theme.InOpenApp" >
+        <item name="android:statusBarColor">@color/bluePrimary</item>
+
+    </style>
+
+    <style name="BottomNavigationViewTextStyle">
+        ...
+        <item name="android:fontFamily">@font/figtree_semibold</item>
+        ...
+    </style>
+</resources>

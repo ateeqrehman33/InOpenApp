@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="8dp"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginVertical="8dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardElevation="0dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:paddingTop="8dp">
+
+        <ImageView
+            android:id="@+id/ivLinkimage"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/rectangle_link_image_bg"
+            android:scaleType="fitXY"
+            android:padding="8dp"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/avatar_1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvLinkName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/figtree_regular"
+            android:gravity="center_vertical"
+            android:text="Sample link name"
+            android:textAlignment="gravity"
+            android:textColor="@color/black"
+            android:layout_marginEnd="16dp"
+            android:textSize="18sp"
+            android:maxLines="1"
+            app:layout_constraintEnd_toStartOf="@+id/clickstv"
+            app:layout_constraintStart_toEndOf="@+id/ivLinkimage"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/tvLinkDatetime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/figtree_semibold"
+            android:text="22 Aug 2023"
+            android:textColor="#999CA0"
+            android:textSize="12sp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="@+id/tvLinkName"
+            app:layout_constraintTop_toBottomOf="@+id/tvLinkName" />
+
+
+        <TextView
+            android:id="@+id/todaysClickstdv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/figtree_semibold"
+            android:text="Clicks"
+            android:textColor="#999CA0"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/clickstv"
+            app:layout_constraintTop_toBottomOf="@+id/tvLinkName" />
+
+
+        <TextView
+            android:id="@+id/clickstv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/figtree_semibold"
+            android:text="233"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tvLinkName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tvLinkName" />
+
+
+        <ImageView
+            android:id="@+id/ivLinkCopy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/rectangle_dotted"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+        <ImageView
+            android:id="@+id/ivCopy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/copy_ic"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/ivLinkCopy"
+            app:layout_constraintTop_toTopOf="@+id/ivLinkCopy" />
+
+
+        <TextView
+            android:id="@+id/tvLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/figtree_regular"
+            android:gravity="center_vertical"
+            android:text="https://samplelink.oia.bio/ashd..."
+            android:textAlignment="gravity"
+            android:textColor="@color/bluePrimary"
+            android:layout_marginStart="16dp"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/ivLinkCopy" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
+
